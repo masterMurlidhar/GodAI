@@ -1,4 +1,7 @@
 
+import datetime
+import pyttsx3
+import speech_recognition as source1
 print("""
                         ##############################
                      ############   God AI   ############
@@ -10,14 +13,11 @@ print("""
 
 """)
 
-#username
+# username
 username = "Captain Skywalker"
 
 
-#modules_required
-import pyttsx3 
-import datetime  
-import speech_recognition as source1
+# modules_required
 
 
 # voice_engine
@@ -38,7 +38,7 @@ voice_engine.setProperty('rate', 210)
 def speak(audio):   # A speak function(), which takes audio as it's parameter
     voice_engine.say(audio)
     voice_engine.runAndWait()
-    
+
 
 # Greeting message
 def greeting():
@@ -46,15 +46,15 @@ def greeting():
     # print(time1)
     time_in_hour = int(datetime.datetime.now().hour)
     # print(time_in_hour)
-    if time_in_hour>0 and time_in_hour<12:
+    if time_in_hour > 0 and time_in_hour < 12:
         print(f'Hello {username}, Good Morning !\n')
-    elif time_in_hour>12 and time_in_hour<16:
+    elif time_in_hour > 12 and time_in_hour < 16:
         print(f'Hello {username}, Good Afternoon !\n')
     else:
         print(f'Hello {username}, Good Evening !\n')
 
     print("I'm here to help you :)")   # Ultimate statements
-    speak("I'm here to help you ... ")   
+    speak("I'm here to help you ... ")
 
 
 def processCommand():
@@ -64,10 +64,10 @@ def processCommand():
     command = source1.Recognizer()
     with source1.Microphone() as source:
         print("Listening...")
-        command.pause_threshold=1.5      
+        command.pause_threshold = 1.5
         audio = command.listen(source)
 
-    #Executing Query
+    # Executing Query
     try:
         print('Recognizing...')
         query = command.recognize_google(audio, language='en-us')
@@ -79,33 +79,17 @@ def processCommand():
     return query
 
 
-#Ultimate Function()
+# Ultimate Function()
 attempt = 1
 if __name__ == "__main__":
     greeting()
-    #logic
+    # logic
     while True:
         query = processCommand().lower()
         if attempt == 6:
             print("Looking Forward To Help You ...")
             speak("Looking Forward To Help You ...")
             exit()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         elif "quit" in query:
             print("Okay !")
@@ -126,15 +110,3 @@ if __name__ == "__main__":
             print("Please! Say Again ...\n")
             speak("Say Again ...\n")
             attempt = attempt + 1
-
-
-
-
-
-
-
-
-
-
-
-
