@@ -2,6 +2,13 @@
 # God-AI_v1
 # voice engine; sapi5, zira
 
+"""
+Developer; Mr. Skywalker
+Purpose; General AI based assistant
+Stardate; 12021.234.07:15:00
+
+"""
+
 import pyttsx3
 import random
 import webbrowser
@@ -20,8 +27,8 @@ print("""
 """)
 
 # username
-username = "Captain Skywalker"
-ai_name = "your friend"
+username = "Skywalker"
+ai_name = "Your Personal Assistant"
 
 
 # voice_engine
@@ -31,7 +38,7 @@ voice_engine = pyttsx3.init('sapi5')   # object creation, voice_engine
 # voice_engine_voice
 voice_engine_voice = voice_engine.getProperty('voices')
 # print(voice_engine_voice[1].id)
-voice_engine.setProperty('voice', voice_engine_voice[2].id)
+voice_engine.setProperty('voice', voice_engine_voice[1].id)
 
 # voice_engine_rate
 voice_engine_rate = voice_engine.getProperty('rate')
