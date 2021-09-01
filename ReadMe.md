@@ -70,6 +70,6 @@ Error-1-> PyAudio Error ?
 
 
 
-# Thanks For Coming !
+# Thanks for your intrest in this project...
 
 

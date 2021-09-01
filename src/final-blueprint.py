@@ -3,9 +3,9 @@
 # voice engine; sapi5, zira
 
 """
-Developer; Mr. Skywalker
-Purpose; General AI based assistant
-Stardate; 12021.234.07:15:00
+Developer: Mr. Skywalker
+Purpose: General AI based assistant
+Stardate: 12021.234.07:15:00
 
 """
 
@@ -15,6 +15,7 @@ import webbrowser
 import datetime
 import os
 import speech_recognition as source1
+
 print("""
                         ##############################
                      ############   God AI   ############
