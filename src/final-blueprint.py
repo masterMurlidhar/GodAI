@@ -39,7 +39,7 @@ voice_engine = pyttsx3.init('sapi5')   # object creation, voice_engine
 # voice_engine_voice
 voice_engine_voice = voice_engine.getProperty('voices')
 # print(voice_engine_voice[1].id)
-voice_engine.setProperty('voice', voice_engine_voice[1].id)
+voice_engine.setProperty('voice', voice_engine_voice[2].id)
 
 # voice_engine_rate
 voice_engine_rate = voice_engine.getProperty('rate')

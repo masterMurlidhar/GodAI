@@ -1,5 +1,5 @@
 
-cd C:\Users\Skywalker\Captain\Development\Projects\God-AI\src
+cd C:\Users\Skywalker\Projects_v1.0\God-AI\src
 
 cls
 
