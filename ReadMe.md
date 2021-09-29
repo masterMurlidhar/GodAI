@@ -69,6 +69,8 @@ Error-1-> PyAudio Error ?
                 # Use Tab key to auto complete
 
 
+## This project is being shutdown & it'll be appear in Project-Humanoid with a better core system and UI...
+
 
 # Thanks for your intrest in this project...
 
